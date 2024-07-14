@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Yemily_search
+        </title>
+    </head>
+
+    <body  class="container-fluid">
+        
+            <h1><i>__Yemily_Search_App__</i></h1>
+            <hr /><br>
+          
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" name="search">
+            <br>
+            <br>
+            <button type="submit">Yemily_search</button>
+        </form>
+        <br>
+        
+        {% if result %}
+            {{result}}
+        {% endif %}
+    </body>
+
+</html>
